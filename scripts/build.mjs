@@ -52,11 +52,11 @@ const html = `<!doctype html>
   <header class="topbar"><a class="wordmark" href="#about" aria-label="${esc(profile.name)} home">bc<span>.</span></a><nav aria-label="Main navigation"><a href="#about">About</a><a href="#research">Research</a><a href="#publications">Publications</a><a href="#contact">Contact</a></nav></header>
   <main id="main">
   <section class="hero" id="about" aria-labelledby="name">
-    <div class="hero-copy"><p class="eyebrow">${esc(profile.tagline)}</p><h1 id="name">${esc(profile.name)}<span class="chinese-name" lang="zh-CN">${esc(profile.nameChinese)}</span></h1>
+    <div class="hero-copy"><h1 id="name">${esc(profile.name)}<span class="chinese-name" lang="zh-CN">${esc(profile.nameChinese)}</span></h1>
     <p class="affiliation"><a href="${url(profile.affiliationUrl)}">${esc(profile.affiliation)}</a></p>
     <div class="bio">${profile.bio.map(p=>`<p>${esc(p)}</p>`).join('')}</div>
     <div class="links"><a href="mailto:${esc(profile.email)}">Email <span aria-hidden="true">↗</span></a>${external(profile.scholarUrl,'Google Scholar')}${profile.cvUrl ? external(profile.cvUrl,'CV') : ''}${profile.githubUrl ? external(profile.githubUrl,'GitHub') : ''}</div></div>
-    <figure class="portrait"><img src="${url(profile.photo)}" alt="${esc(profile.photoAlt)}" width="1254" height="1254" fetchpriority="high"><figcaption>A little sketch of me.</figcaption></figure>
+    <figure class="portrait"><img src="${url(profile.photo)}" alt="${esc(profile.photoAlt)}" width="1254" height="1254" fetchpriority="high"></figure>
   </section>
   <section class="section" id="research" aria-labelledby="research-heading"><div class="section-heading"><h2 id="research-heading"><span class="section-number" aria-hidden="true">01</span>Research interests</h2></div><div class="research-grid">${profile.research.map(r=>`<div class="research-item"><h3>${esc(r.title)}</h3><p>${esc(r.description)}</p></div>`).join('')}</div></section>
   ${news}

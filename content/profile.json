@@ -1,0 +1,73 @@
+{
+  "name": "Ben Chi",
+  "nameChinese": "池 奔",
+  "affiliation": "Zhejiang University",
+  "affiliationUrl": "https://www.zju.edu.cn/english/",
+  "email": "chiben@zju.edu.cn",
+  "scholarUrl": "https://scholar.google.com/citations?user=EvDI6w4AAAAJ&hl=en",
+  "githubUrl": "",
+  "cvUrl": "",
+  "photo": "assets/photo.png",
+  "photoAlt": "A hand-drawn illustration of Ben Chi",
+  "tagline": "Smart cities. Human mobility.",
+  "bio": [
+    "I am at Zhejiang University. My research focuses on smart cities and human mobility.",
+    "My work explores how large language models and generative agents can help us understand and predict movement in cities, from individual travel patterns to city-wide mobility demand."
+  ],
+  "research": [
+    {"title": "Human mobility", "description": "Understanding travel patterns and predicting where people go next."},
+    {"title": "AI for cities", "description": "Exploring large language models and generative agents for mobility computing."},
+    {"title": "Urban dynamics", "description": "Studying spatiotemporal demand and the transfer of mobility knowledge across cities."}
+  ],
+  "news": [],
+  "publications": [
+    {
+      "title": "A Multi-Step location prediction model based on large language model knowledge distillation and experts integration",
+      "authors": "B. Chi, Y. Chen, C. Li, S. Xu, Y. Zhang, X. M. Chen",
+      "venue": "Transportation Research Part C: Emerging Technologies",
+      "details": "188, 105668",
+      "year": 2026,
+      "url": "https://scholar.google.com/citations?view_op=view_citation&user=EvDI6w4AAAAJ&citation_for_view=EvDI6w4AAAAJ:2osOgNQ5qMEC&hl=en"
+    },
+    {
+      "title": "Zero-shot cross-city ride-hailing demand prediction leveraging transferable urban spatiotemporal dynamics",
+      "authors": "B. Chi, H. Xu, X. M. Chen",
+      "venue": "Transportation Research Part A: Policy and Practice",
+      "details": "213, 105233",
+      "year": 2026,
+      "url": "https://scholar.google.com/citations?view_op=view_citation&user=EvDI6w4AAAAJ&citation_for_view=EvDI6w4AAAAJ:qjMakFHDy7sC&hl=en"
+    },
+    {
+      "title": "Generative agents empowering human mobility computing",
+      "authors": "B. Chi, C. Li, S. Xu, Y. Chen, X. M. Chen",
+      "venue": "The Innovation Informatics",
+      "details": "2 (1), 100020",
+      "year": 2026,
+      "url": "https://scholar.google.com/citations?view_op=view_citation&user=EvDI6w4AAAAJ&citation_for_view=EvDI6w4AAAAJ:9yKSN-GCB0IC&hl=en"
+    },
+    {
+      "title": "Toward interactive next location prediction driven by large language models",
+      "authors": "Y. Chen, B. Chi, C. Li, Y. Zhang, C. Liao, X. Chen, N. Xie",
+      "venue": "IEEE Transactions on Computational Social Systems",
+      "details": "12 (5), 2696–2712",
+      "year": 2025,
+      "url": "https://scholar.google.com/citations?view_op=view_citation&user=EvDI6w4AAAAJ&citation_for_view=EvDI6w4AAAAJ:u5HHmVD_uO8C&hl=en"
+    },
+    {
+      "title": "Large language model empowered smart city mobility",
+      "authors": "Y. Chen, H. Zhang, C. Li, B. Chi, X. Chen, J. Wu",
+      "venue": "Frontiers of Engineering Management",
+      "details": "12 (1), 201–207",
+      "year": 2025,
+      "url": "https://scholar.google.com/citations?view_op=view_citation&user=EvDI6w4AAAAJ&citation_for_view=EvDI6w4AAAAJ:u-x6o8ySG0sC&hl=en"
+    },
+    {
+      "title": "Revealing Urban Mobility Inertia of Crowd Dispersal After Large-Scale Events",
+      "authors": "Chuanjia Li, Ben Chi, Chenlei Liao, Xiqun Chen, Junyi Li, Yong Chen, Shuyang Xu, Wanting Zhang, Shaocheng Jia, Zhanhong Cheng, Li Li, Meng Li, Zan Yang, Zhenning Dong, Yuelong Su, Zi-You Gao",
+      "venue": "SSRN",
+      "details": "Working paper",
+      "year": null,
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=7485300"
+    }
+  ]
+}

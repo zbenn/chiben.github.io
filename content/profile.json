@@ -47,6 +47,7 @@
     {
       "title": "Toward interactive next location prediction driven by large language models",
       "authors": "Y. Chen, B. Chi, C. Li, Y. Zhang, C. Liao, X. Chen, N. Xie",
+      "coFirstAuthors": ["Y. Chen", "B. Chi"],
       "venue": "IEEE Transactions on Computational Social Systems",
       "details": "12 (5), 2696–2712",
       "year": 2025,

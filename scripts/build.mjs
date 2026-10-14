@@ -26,11 +26,16 @@ for (const pub of profile.publications) {
   url(pub.url);
 }
 const publications = [...profile.publications].sort((a,b)=>(b.year ?? 0)-(a.year ?? 0));
-const authors = text => esc(text).replace(/\b(B\. Chi|Ben Chi)\b/g, '<strong>$1</strong>');
+const authors = (text, coFirstAuthors = []) => text.split(',').map(name => {
+  const author = name.trim();
+  const label = esc(author).replace(/\b(B\. Chi|Ben Chi)\b/g, '<strong>$1</strong>');
+  return label + (coFirstAuthors.includes(author) ? '<sup title="Co-first author">#</sup>' : '');
+}).join(', ');
 const paperHtml = publications.map(p => `<li class="publication">
   <div class="pub-year">${p.year ?? '—'}</div>
   <article><h3 class="pub-title"><a href="${url(p.url)}" target="_blank" rel="noopener noreferrer">${esc(p.title)}</a></h3>
-  <p class="pub-authors">${authors(p.authors)}</p>
+  <p class="pub-authors">${authors(p.authors, p.coFirstAuthors)}</p>
+  ${p.coFirstAuthors?.length ? '<p class="pub-authors"><sup>#</sup> Equal contribution (co-first authors).</p>' : ''}
   <p class="pub-venue"><em>${esc(p.venue)}</em>${p.details ? ` · ${esc(p.details)}` : ''}</p>
   <div class="pub-links">${external(p.url, p.venue === 'SSRN' ? 'SSRN' : 'Paper')}${p.pdf ? external(p.pdf,'PDF') : ''}${p.code ? external(p.code,'Code') : ''}</div></article></li>`).join('\n');
 const news = profile.news?.length ? `<section class="section" id="news"><div class="section-heading"><h2>News</h2></div><ul class="news-list">${profile.news.map(n=>`<li><time>${esc(n.date)}</time>${esc(n.text)}</li>`).join('')}</ul></section>` : '';
